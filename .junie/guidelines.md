@@ -39,6 +39,7 @@ The site will be monetized with advertisements and provides users with tools to 
   - Always create and checkout the task branch BEFORE making any changes
   - Never work directly on the main branch for task implementation
   - Always create a pull request when the task is completed to merge changes back to main branch
+  - Push changes to the pull request after every commit/update to keep the PR current
 
 ## Development Guidelines
 
