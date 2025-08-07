@@ -38,6 +38,7 @@ The site will be monetized with advertisements and provides users with tools to 
   - Branch naming convention: `task/{task-number}-{brief-description}` (e.g., `task/03-update-guidelines`)
   - Always create and checkout the task branch BEFORE making any changes
   - Never work directly on the main branch for task implementation
+  - Always create a pull request when the task is completed to merge changes back to main branch
 
 ## Development Guidelines
 
