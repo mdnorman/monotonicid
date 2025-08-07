@@ -35,6 +35,9 @@ The site will be monetized with advertisements and provides users with tools to 
 - Each task should have its own `.md` file with detailed specifications
 - Use a single tracking system within the project to monitor task progress
 - **Branching**: Create a separate branch for each individual task to maintain clean development workflow
+  - Branch naming convention: `task/{task-number}-{brief-description}` (e.g., `task/03-update-guidelines`)
+  - Always create and checkout the task branch BEFORE making any changes
+  - Never work directly on the main branch for task implementation
 
 ## Development Guidelines
 
