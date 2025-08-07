@@ -1,0 +1,28 @@
+{
+  "name": "monotonicid",
+  "version": "1.0.0",
+  "description": "A web application for decoding timestamp-based monotonic identifiers",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm --filter web build",
+    "test": "pnpm --filter web test",
+    "lint": "pnpm --filter web lint"
+  },
+  "keywords": [
+    "monotonic",
+    "timestamp",
+    "decoder",
+    "utility"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.15.0"
+}
