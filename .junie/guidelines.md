@@ -51,7 +51,7 @@ The site will be monetized with advertisements and provides users with tools to 
 - **Test Configuration**: Configure tests to run once and exit (not in watch mode) for CI/CD compatibility
 - **Generated Files**: Ensure comprehensive .gitignore coverage for all generated files and build artifacts
 - **Dependency Versions**: Use specific versions (no `^` or `~` prefixes) to ensure reproducible builds and avoid unexpected updates
-- **Feedback Handling**: Fixing issues after feedback is NOT a new task - it's part of the original task completion
+- **Feedback Handling**: Fixing issues after feedback, updating guidelines, or addressing user clarifications is NOT a new task - it's part of the original task completion. Never create separate task files for feedback responses.
 
 ### Project Standards:
 - Maintain clean, readable code
