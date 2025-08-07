@@ -65,7 +65,7 @@ ULID: 01ARZ3NDEKTSV4RRFFQ69G5FAV
 
 ## Branch
 - Branch name: `task/03-ulid-decoder`
-- Status: 📋 **PLANNED**
+- Status: ✅ **COMPLETED**
 
 ## Notes
 - ULID specification: https://github.com/ulid/spec
