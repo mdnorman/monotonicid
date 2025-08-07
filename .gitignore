@@ -4,6 +4,7 @@
 *.swp
 *.swo
 *~
+.output.txt
 
 # Dependencies
 node_modules/
