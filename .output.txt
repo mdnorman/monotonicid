@@ -1,0 +1,1097 @@
+docs: update guidelines based on session feedback mdnorman/monotonicid#1
+Open • mdnorman wants to merge 10 commits into main from task/04-update-guidelines • about 48 minutes ago
++4691 -0 • ✓ Checks passing
+Reviewers: coderabbitai (Commented)
+  Updates project guidelines with key learnings from development session
+  including branch management, test configuration, gitignore practices, and
+  feedback handling policies.
+
+  ## Summary by CodeRabbit
+
+  • **Documentation**
+      • Added a comprehensive README with project overview, setup instructions,
+      technology stack, features, and contribution guidelines.
+      • Updated development guidelines to clarify branch usage, testing
+      practices, .gitignore maintenance, and task scope.
+  • **Chores**
+      • Replaced the .gitignore file with an expanded list to better exclude
+      generated files, dependencies, build artifacts, and editor/OS files.
+
+coderabbitai • 46m • Edited
+
+  ## Walkthrough
+
+  This update introduces a new, comprehensive .gitignore file, expands the
+  development guidelines with four new directives, and adds a detailed
+  README.md for the MonotonicID Decoder web application. The changes focus on
+  documentation, version control hygiene, and clarifying development and
+  contribution processes without modifying any code or exported entities.
+
+  ## Changes
+
+   Cohort / File(s)                   | Change Summary
+  ------------------------------------|-------------------------------------
+   **.gitignore Overhaul**.gitignore  | Replaces the previous minimal .git…
+   **Development Guidelines Update**… | Adds four new directives: enforce …
+   **README Addition**README.md       | Adds a new README with project ove…
+
+  ## Estimated code review effort
+
+  🎯 1 (Trivial) | ⏱️ ~3 minutes
+
+  ## Poem
+
+  | In the warren, we tidy and write,
+  | With guidelines and README shining bright.
+  | Our .gitignore stands strong and wide,
+  | Keeping clutter well outside.
+  | With every hop, our docs grow clear—
+  | A coder’s path, now free of fear!
+  | 🐇✨
+
+  | [!NOTE]
+  | ⚡️ Unit Test Generation is now available in beta!
+  | Learn more here https://docs.coderabbit.ai/finishing-touches/unit-test-
+  | generation, or try it out under "Finishing Touches" below.
+  ✨ Finishing Touches🧪 Generate unit tests
+  [ ]    Create PR with unit tests
+  [ ]    Post copyable unit tests in a comment
+  [ ]    Commit unit tests in branch task/04-update-guidelines
+
+  --------
+
+  Thanks for using CodeRabbit! It's free for OSS, and your support helps us
+  grow. If you like it, consider giving us a shout-out.
+  ❤️ Share
+  [x] (https://twitter.
+  com/intent/tweet?text=I%20just%20used%20%40coderabbitai%20for%20my%20code%20review%2C%20and%20it%27s%20fantastic%21%20It%27s%20free%20for%20OSS%20and%20offers%20a%20free%20trial%20for%20the%20proprietary%20code.
+  %20Check%20it%20out%3A&url=https%3A//coderabbit.ai)
+  • Mastodon https://mastodon.
+  social/share?text=I%20just%20used%20%40coderabbitai%20for%20my%20code%20review%2C%20and%20it%27s%20fantastic%21%20It%27s%20free%20for%20OSS%20and%20offers%20a%20free%20trial%20for%20the%20proprietary%20code.
+  %20Check%20it%20out%3A%20https%3A%2F%2Fcoderabbit.ai
+  • Reddit https://www.reddit.
+  com/submit?title=Great%20tool%20for%20code%20review%20-
+  %20CodeRabbit&text=I%20just%20used%20CodeRabbit%20for%20my%20code%20review%2C%20and%20it%27s%20fantastic%21%20It%27s%20free%20for%20OSS%20and%20offers%20a%20free%20trial%20for%20proprietary%20code.
+  %20Check%20it%20out%3A%20https%3A//coderabbit.ai
+  • LinkedIn https://www.linkedin.com/sharing/share-
+  offsite/?url=https%3A%2F%2Fcoderabbit.
+  ai&mini=true&title=Great%20tool%20for%20code%20review%20-
+  %20CodeRabbit&summary=I%20just%20used%20CodeRabbit%20for%20my%20code%20review%2C%20and%20it%27s%20fantastic%21%20It%27s%20free%20for%20OSS%20and%20offers%20a%20free%20trial%20for%20proprietary%20code
+  🪧 Tips
+  ### Chat
+
+  There are 3 ways to chat with CodeRabbit
+  https://coderabbit.
+  ai?utm_source=oss&utm_medium=github&utm_campaign=mdnorman/monotonicid&utm_content=1:
+
+  • Review comments: Directly reply to a review comment made by CodeRabbit.
+  Example:
+      • I pushed a fix in commit <commit_id>, please review it.
+      • Explain this complex logic.
+      • Open a follow-up GitHub issue for this discussion.
+  • Files and specific lines of code (under the "Files changed" tab): Tag
+  @coderabbitai in a new review comment at the desired location with your
+  query. Examples:
+      • @coderabbitai explain this code block.
+  • PR comments: Tag @coderabbitai in a new PR comment to ask questions about
+  the PR branch. For the best results, please provide a very specific query,
+  as very limited context is provided in this mode. Examples:
+      • @coderabbitai gather interesting stats about this repository and
+      render them as a table. Additionally, render a pie chart showing the
+      language distribution in the codebase.
+      • @coderabbitai read src/utils.ts and explain its main purpose.
+      • @coderabbitai read the files in the src/scheduler package and generate
+      a class diagram using mermaid and a README in the markdown format.
+
+
+  ### Support
+
+  Need help? Create a ticket on our support page
+  https://www.coderabbit.ai/contact-us/support for assistance with any issues
+  or questions.
+
+  ### CodeRabbit Commands (Invoked using PR comments)
+
+  • @coderabbitai pause to pause the reviews on a PR.
+  • @coderabbitai resume to resume the paused reviews.
+  • @coderabbitai review to trigger an incremental review. This is useful when
+  automatic reviews are disabled for the repository.
+  • @coderabbitai full review to do a full review from scratch and review all
+  the files again.
+  • @coderabbitai summary to regenerate the summary of the PR.
+  • @coderabbitai generate docstrings to generate docstrings https://docs.
+  coderabbit.ai/finishing-touches/docstrings for this PR.
+  • @coderabbitai generate sequence diagram to generate a sequence diagram of
+  the changes in this PR.
+  • @coderabbitai generate unit tests to generate unit tests for this PR.
+  • @coderabbitai resolve resolve all the CodeRabbit review comments.
+  • @coderabbitai configuration to show the current CodeRabbit configuration
+  for the repository.
+  • @coderabbitai help to get help.
+
+  ### Other keywords and placeholders
+
+  • Add @coderabbitai ignore anywhere in the PR description to prevent this PR
+  from being reviewed.
+  • Add @coderabbitai summary to generate the high-level summary at a specific
+  location in the PR description.
+  • Add @coderabbitai anywhere in the PR title to generate the title
+  automatically.
+
+  ### CodeRabbit Configuration File (.coderabbit.yaml)
+
+  • You can programmatically configure CodeRabbit by adding a .coderabbit.yaml
+  file to the root of your repository.
+  • Please see the configuration documentation https://docs.coderabbit.
+  ai/guides/configure-coderabbit for more information.
+  • If your editor has YAML language server enabled, you can add the path at
+  the top of this file to enable auto-completion and validation: # yaml-
+  language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+
+  ### Documentation and Community
+
+  • Visit our Documentation https://docs.coderabbit.ai for detailed
+  information on how to use CodeRabbit.
+  • Join our Discord Community http://discord.gg/coderabbit to get help,
+  request features, and share feedback.
+  • Follow us on X/Twitter https://twitter.com/coderabbitai for updates and
+  announcements.
+View the full review: https://github.com/mdnorman/monotonicid/pull/1#issuecomment-3164830421
+coderabbitai commented • 43m • Newest comment
+  **Actionable comments posted: 0**
+  🧹 Nitpick comments (3).gitignore (1)
+  48-53: **Add pnpm-specific cache directory to keep repository clean**
+
+  The project standardizes on pnpm, yet .pnpm-store/ (the global store created
+  with PNPM_HOME) is not ignored. Accidentally committing this folder adds
+  thousands of transient files and greatly inflates clone size.
+
+     # Cache directories
+     .cache/
+     .parcel-cache/
+    +.pnpm-store/
+     .eslintcache
+     .stylelintcache
+  .junie/guidelines.md (1)
+  5-6: **Typo: “monotonic UIs” → “monotonic IDs”**
+
+  The sentence describes decoding identifier strings, not user interfaces.
+
+    -This project is a web application that allows decoding timestamp-based
+  monotonic UIs.
+    +This project is a web application that allows decoding timestamp-based
+  monotonic IDs.
+  README.md (1)
+  33-46: **Specify a language for the directory-tree code block to satisfy
+  markdownlint**
+
+  Static analysis (MD040) flags the fenced block that renders the project
+  layout. Adding a language (e.g., text) silences the warning and enables
+  proper rendering in some viewers.
+
+    -```
+    +```text
+     /
+     ├── .junie/                 # Junie configuration and guidelines
+     ├── tasks/                  # Task management directory
+     │   └── README.md          # Points to individual task files
+     ├── packages/              # Monorepo packages
+     │   └── web/              # Main web application
+     └── [other root files]
+
+
+    </blockquote></details>
+
+    </blockquote></details>
+
+    <details>
+    <summary>📜 Review details</summary>
+
+    **Configuration used: CodeRabbit UI**
+    **Review profile: CHILL**
+    **Plan: Pro**
+
+
+    <details>
+    <summary>📥 Commits</summary>
+
+    Reviewing files that changed from the base of the PR and between
+  74ef88a6479680c3be6a56359263ff230fd7b580 and
+  7e31c2a88a589a98a2be4c09deb4d3e515b7ff39.
+
+    </details>
+
+    <details>
+    <summary>⛔ Files ignored due to path filters (297)</summary>
+
+    * `node_modules/.bin/eslint` is excluded by `!**/node_modules/**`
+    * `node_modules/.modules.yaml` is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@adobe+css-tools@4.4.3/node_modules/@adobe/css-
+  tools/LICENSE` is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@adobe+css-tools@4.4.3/node_modules/@adobe/css-
+  tools/Readme.md` is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@adobe+css-tools@4.4.3/node_modules/@adobe/css-
+  tools/dist/index.cjs` is excluded by `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@adobe+css-tools@4.4.3/node_modules/@adobe/css-
+  tools/dist/index.cjs.map` is excluded by `!**/dist/**`,
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@adobe+css-tools@4.4.3/node_modules/@adobe/css-
+  tools/dist/index.mjs` is excluded by `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@adobe+css-tools@4.4.3/node_modules/@adobe/css-
+  tools/dist/index.mjs.map` is excluded by `!**/dist/**`,
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@adobe+css-tools@4.4.3/node_modules/@adobe/css-
+  tools/dist/types.d.ts` is excluded by `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@adobe+css-tools@4.4.3/node_modules/@adobe/css-
+  tools/dist/types.d.ts.map` is excluded by `!**/dist/**`,
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@adobe+css-tools@4.4.3/node_modules/@adobe/css-
+  tools/package.json` is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@ampproject+remapping@2.3.
+  0/node_modules/@ampproject/remapping/LICENSE` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@ampproject+remapping@2.3.
+  0/node_modules/@ampproject/remapping/README.md` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@ampproject+remapping@2.3.
+  0/node_modules/@ampproject/remapping/dist/remapping.mjs` is excluded by
+  `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@ampproject+remapping@2.3.
+  0/node_modules/@ampproject/remapping/dist/remapping.mjs.map` is excluded by
+  `!**/dist/**`, `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@ampproject+remapping@2.3.
+  0/node_modules/@ampproject/remapping/dist/remapping.umd.js` is excluded by
+  `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@ampproject+remapping@2.3.
+  0/node_modules/@ampproject/remapping/dist/remapping.umd.js.map` is excluded
+  by `!**/dist/**`, `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@ampproject+remapping@2.3.
+  0/node_modules/@ampproject/remapping/dist/types/build-source-map-tree.d.ts`
+  is excluded by `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@ampproject+remapping@2.3.
+  0/node_modules/@ampproject/remapping/dist/types/remapping.d.ts` is excluded
+  by `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@ampproject+remapping@2.3.
+  0/node_modules/@ampproject/remapping/dist/types/source-map-tree.d.ts` is
+  excluded by `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@ampproject+remapping@2.3.
+  0/node_modules/@ampproject/remapping/dist/types/source-map.d.ts` is excluded
+  by `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@ampproject+remapping@2.3.
+  0/node_modules/@ampproject/remapping/dist/types/types.d.ts` is excluded by
+  `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@ampproject+remapping@2.3.
+  0/node_modules/@ampproject/remapping/package.json` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@ampproject+remapping@2.3.
+  0/node_modules/@jridgewell/gen-mapping` is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@ampproject+remapping@2.3.
+  0/node_modules/@jridgewell/trace-mapping` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/LICENSE` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/README.md` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/browser/css-color.min.js` is
+  excluded by `!**/dist/**`, `!**/node_modules/**`, `!**/*.min.js`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/browser/css-color.min.js.map` is
+  excluded by `!**/dist/**`, `!**/node_modules/**`, `!**/*.map`, `!**/*.min.js.
+  map`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/cjs/index.cjs` is excluded by
+  `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/cjs/index.cjs.map` is excluded by
+  `!**/dist/**`, `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/cjs/index.d.cts` is excluded by
+  `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/index.d.ts` is excluded by
+  `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/index.js` is excluded by
+  `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/index.js.map` is excluded by
+  `!**/dist/**`, `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/cache.d.ts` is excluded by
+  `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/cache.js` is excluded by
+  `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/cache.js.map` is excluded
+  by `!**/dist/**`, `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/color.d.ts` is excluded by
+  `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/color.js` is excluded by
+  `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/color.js.map` is excluded
+  by `!**/dist/**`, `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/common.d.ts` is excluded by
+  `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/common.js` is excluded by
+  `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/common.js.map` is excluded
+  by `!**/dist/**`, `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/constant.d.ts` is excluded
+  by `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/constant.js` is excluded by
+  `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/constant.js.map` is
+  excluded by `!**/dist/**`, `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/convert.d.ts` is excluded
+  by `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/convert.js` is excluded by
+  `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/convert.js.map` is excluded
+  by `!**/dist/**`, `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/css-calc.d.ts` is excluded
+  by `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/css-calc.js` is excluded by
+  `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/css-calc.js.map` is
+  excluded by `!**/dist/**`, `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/css-gradient.d.ts` is
+  excluded by `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/css-gradient.js` is
+  excluded by `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/css-gradient.js.map` is
+  excluded by `!**/dist/**`, `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/css-var.d.ts` is excluded
+  by `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/css-var.js` is excluded by
+  `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/css-var.js.map` is excluded
+  by `!**/dist/**`, `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/relative-color.d.ts` is
+  excluded by `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/relative-color.js` is
+  excluded by `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/relative-color.js.map` is
+  excluded by `!**/dist/**`, `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/resolve.d.ts` is excluded
+  by `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/resolve.js` is excluded by
+  `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/resolve.js.map` is excluded
+  by `!**/dist/**`, `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/typedef.d.ts` is excluded
+  by `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/util.d.ts` is excluded by
+  `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/util.js` is excluded by
+  `!**/dist/**`, `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/dist/esm/js/util.js.map` is excluded by
+  `!**/dist/**`, `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/package.json` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/src/index.ts` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/src/js/cache.ts` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/src/js/color.ts` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/src/js/common.ts` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/src/js/constant.ts` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/src/js/convert.ts` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/src/js/css-calc.ts` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/src/js/css-gradient.ts` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/src/js/css-var.ts` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/src/js/relative-color.ts` is excluded
+  by `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/src/js/resolve.ts` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/src/js/typedef.ts` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@asamuzakjp/css-color/src/js/util.ts` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@csstools/css-calc` is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@csstools/css-color-parser` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@csstools/css-parser-algorithms` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.
+  0/node_modules/@csstools/css-tokenizer` is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@asamuzakjp+css-color@3.2.0/node_modules/lru-cache`
+  is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+code-frame@7.27.1/node_modules/@babel/code-
+  frame/LICENSE` is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+code-frame@7.27.1/node_modules/@babel/code-
+  frame/README.md` is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+code-frame@7.27.1/node_modules/@babel/code-
+  frame/lib/index.js` is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+code-frame@7.27.1/node_modules/@babel/code-
+  frame/lib/index.js.map` is excluded by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+code-frame@7.27.1/node_modules/@babel/code-
+  frame/package.json` is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+code-frame@7.27.1/node_modules/@babel/helper-
+  validator-identifier` is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+code-frame@7.27.1/node_modules/js-tokens` is
+  excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+code-frame@7.27.1/node_modules/picocolors` is
+  excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+compat-data@7.28.0/node_modules/@babel/compat-
+  data/LICENSE` is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+compat-data@7.28.0/node_modules/@babel/compat-
+  data/README.md` is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+compat-data@7.28.0/node_modules/@babel/compat-
+  data/corejs2-built-ins.js` is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+compat-data@7.28.0/node_modules/@babel/compat-
+  data/corejs3-shipped-proposals.js` is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+compat-data@7.28.0/node_modules/@babel/compat-
+  data/data/corejs2-built-ins.json` is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+compat-data@7.28.0/node_modules/@babel/compat-
+  data/data/corejs3-shipped-proposals.json` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+compat-data@7.28.0/node_modules/@babel/compat-
+  data/data/native-modules.json` is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+compat-data@7.28.0/node_modules/@babel/compat-
+  data/data/overlapping-plugins.json` is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+compat-data@7.28.0/node_modules/@babel/compat-
+  data/data/plugin-bugfixes.json` is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+compat-data@7.28.0/node_modules/@babel/compat-
+  data/data/plugins.json` is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+compat-data@7.28.0/node_modules/@babel/compat-
+  data/native-modules.js` is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+compat-data@7.28.0/node_modules/@babel/compat-
+  data/overlapping-plugins.js` is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+compat-data@7.28.0/node_modules/@babel/compat-
+  data/package.json` is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+compat-data@7.28.0/node_modules/@babel/compat-
+  data/plugin-bugfixes.js` is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+compat-data@7.28.0/node_modules/@babel/compat-
+  data/plugins.js` is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@ampproject/remapping` is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.0/node_modules/@babel/code-frame`
+  is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.0/node_modules/@babel/core/LICENSE`
+  is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.0/node_modules/@babel/core/README.
+  md` is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/cache-contexts.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/cache-contexts.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/caching.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/caching.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/config-chain.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/config-chain.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/config-descriptors.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/config-descriptors.js.map` is excluded
+  by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/files/configuration.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/files/configuration.js.map` is
+  excluded by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/files/import.cjs` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/files/import.cjs.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/files/index-browser.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/files/index-browser.js.map` is
+  excluded by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/files/index.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/files/index.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/files/module-types.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/files/module-types.js.map` is excluded
+  by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/files/package.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/files/package.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/files/plugins.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/files/plugins.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/files/types.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/files/types.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/files/utils.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/files/utils.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/full.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/full.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/helpers/config-api.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/helpers/config-api.js.map` is excluded
+  by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/helpers/deep-array.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/helpers/deep-array.js.map` is excluded
+  by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/helpers/environment.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/helpers/environment.js.map` is
+  excluded by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/index.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/index.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/item.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/item.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/partial.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/partial.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/pattern-to-regex.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/pattern-to-regex.js.map` is excluded
+  by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/plugin.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/plugin.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/printer.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/printer.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/resolve-targets-browser.js` is
+  excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/resolve-targets-browser.js.map` is
+  excluded by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/resolve-targets.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/resolve-targets.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/util.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/util.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/validation/option-assertions.js` is
+  excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/validation/option-assertions.js.map`
+  is excluded by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/validation/options.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/validation/options.js.map` is excluded
+  by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/validation/plugins.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/validation/plugins.js.map` is excluded
+  by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/validation/removed.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/config/validation/removed.js.map` is excluded
+  by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/errors/config-error.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/errors/config-error.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/errors/rewrite-stack-trace.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/errors/rewrite-stack-trace.js.map` is
+  excluded by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/gensync-utils/async.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/gensync-utils/async.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/gensync-utils/fs.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/gensync-utils/fs.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/gensync-utils/functional.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/gensync-utils/functional.js.map` is excluded
+  by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/index.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/index.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/parse.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/parse.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/parser/index.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/parser/index.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/parser/util/missing-plugin-helper.js` is
+  excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/parser/util/missing-plugin-helper.js.map` is
+  excluded by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/tools/build-external-helpers.js` is excluded
+  by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/tools/build-external-helpers.js.map` is
+  excluded by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/transform-ast.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/transform-ast.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/transform-file-browser.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/transform-file-browser.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/transform-file.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/transform-file.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/transform.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/transform.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/transformation/block-hoist-plugin.js` is
+  excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/transformation/block-hoist-plugin.js.map` is
+  excluded by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/transformation/file/babel-7-helpers.cjs` is
+  excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/transformation/file/babel-7-helpers.cjs.map`
+  is excluded by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/transformation/file/file.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/transformation/file/file.js.map` is excluded
+  by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/transformation/file/generate.js` is excluded
+  by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/transformation/file/generate.js.map` is
+  excluded by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/transformation/file/merge-map.js` is excluded
+  by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/transformation/file/merge-map.js.map` is
+  excluded by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/transformation/index.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/transformation/index.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/transformation/normalize-file.js` is excluded
+  by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/transformation/normalize-file.js.map` is
+  excluded by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/transformation/normalize-opts.js` is excluded
+  by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/transformation/normalize-opts.js.map` is
+  excluded by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/transformation/plugin-pass.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/transformation/plugin-pass.js.map` is
+  excluded by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/transformation/util/clone-deep.js` is
+  excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/transformation/util/clone-deep.js.map` is
+  excluded by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/vendor/import-meta-resolve.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/lib/vendor/import-meta-resolve.js.map` is
+  excluded by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/node_modules/.bin/json5` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/node_modules/.bin/parser` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/node_modules/.bin/semver` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.0/node_modules/@babel/core/package.
+  json` is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/src/config/files/index-browser.ts` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/src/config/files/index.ts` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/src/config/resolve-targets-browser.ts` is
+  excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/src/config/resolve-targets.ts` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/src/transform-file-browser.ts` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.
+  0/node_modules/@babel/core/src/transform-file.ts` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.0/node_modules/@babel/generator` is
+  excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.0/node_modules/@babel/helper-
+  compilation-targets` is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.0/node_modules/@babel/helper-module-
+  transforms` is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.0/node_modules/@babel/helpers` is
+  excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.0/node_modules/@babel/parser` is
+  excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.0/node_modules/@babel/template` is
+  excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.0/node_modules/@babel/traverse` is
+  excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.0/node_modules/@babel/types` is
+  excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.0/node_modules/convert-source-map`
+  is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.0/node_modules/debug` is excluded
+  by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.0/node_modules/gensync` is excluded
+  by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.0/node_modules/json5` is excluded
+  by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+core@7.28.0/node_modules/semver` is excluded
+  by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/LICENSE` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/README.md` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/buffer.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/buffer.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/generators/base.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/generators/base.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/generators/classes.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/generators/classes.js.map` is excluded
+  by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/generators/deprecated.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/generators/deprecated.js.map` is
+  excluded by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/generators/expressions.js` is excluded
+  by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/generators/expressions.js.map` is
+  excluded by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/generators/flow.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/generators/flow.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/generators/index.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/generators/index.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/generators/jsx.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/generators/jsx.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/generators/methods.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/generators/methods.js.map` is excluded
+  by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/generators/modules.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/generators/modules.js.map` is excluded
+  by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/generators/statements.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/generators/statements.js.map` is
+  excluded by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/generators/template-literals.js` is
+  excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/generators/template-literals.js.map` is
+  excluded by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/generators/types.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/generators/types.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/generators/typescript.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/generators/typescript.js.map` is
+  excluded by `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/index.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/index.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/node/index.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/node/index.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/node/parentheses.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/node/parentheses.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/node/whitespace.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/node/whitespace.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/printer.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/printer.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/source-map.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/source-map.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/token-map.js` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/lib/token-map.js.map` is excluded by
+  `!**/node_modules/**`, `!**/*.map`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/node_modules/.bin/jsesc` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/node_modules/.bin/parser` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+generator@7.28.
+  0/node_modules/@babel/generator/package.json` is excluded by
+  `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+generator@7.28.0/node_modules/@babel/parser`
+  is excluded by `!**/node_modules/**`
+    * `node_modules/.pnpm/@babel+generator@7.28.0/node_modules/@babel/types`
+  is excluded by `!**/node_modules/**`
+
+    </details>
+
+    <details>
+    <summary>📒 Files selected for processing (3)</summary>
+
+    * `.gitignore` (1 hunks)
+    * `.junie/guidelines.md` (1 hunks)
+    * `README.md` (1 hunks)
+
+    </details>
+
+    <details>
+    <summary>🧰 Additional context used</summary>
+
+    <details>
+    <summary>🪛 markdownlint-cli2 (0.17.2)</summary>
+
+    <details>
+    <summary>README.md</summary>
+
+    33-33: Fenced code blocks should have a language specified
+
+    (MD040, fenced-code-language)
+
+    </details>
+
+    </details>
+
+    </details>
+
+    </details>
+
+    <!-- This is an auto-generated comment by CodeRabbit for review status -->
+View this pull request on GitHub: https://github.com/mdnorman/monotonicid/pull/1
