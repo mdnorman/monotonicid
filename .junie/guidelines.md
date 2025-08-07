@@ -44,6 +44,10 @@ The site will be monetized with advertisements and provides users with tools to 
 - **Code Style**: Follow modern web development best practices
 - **Package Management**: Use pnpm for all package operations
 - **Monorepo**: Respect the monorepo structure even with single package initially
+- **Branch Management**: Always checkout the task branch when making changes so the user can see the work
+- **Test Configuration**: Configure tests to run once and exit (not in watch mode) for CI/CD compatibility
+- **Generated Files**: Ensure comprehensive .gitignore coverage for all generated files and build artifacts
+- **Feedback Handling**: Fixing issues after feedback is NOT a new task - it's part of the original task completion
 
 ### Project Standards:
 - Maintain clean, readable code
