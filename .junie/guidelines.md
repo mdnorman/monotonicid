@@ -35,9 +35,9 @@ The site will be monetized with advertisements and provides users with tools to 
 - Each task should have its own `.md` file with detailed specifications
 - Use a single tracking system within the project to monitor task progress
 - **Branching**: Create a separate branch for each individual task to maintain clean development workflow
-  - Branch naming convention: `task/{task-number}-{brief-description}` (e.g., `task/03-update-guidelines`)
+  - Branch naming convention: `task/{task-number}-{kebab-case-description}` (e.g., `task/03-update-guidelines`) - use lowercase with hyphens
   - Always create and checkout the task branch BEFORE making any changes
-  - Never work directly on the main branch for task implementation
+  - Never work directly on the main branch for task implementation (assumes `main` is the default branch)
   - Always create a pull request when the task is completed to merge changes back to main branch
   - Push changes to the pull request after every commit/update to keep the PR current
 
@@ -53,7 +53,7 @@ The site will be monetized with advertisements and provides users with tools to 
 - **Test Configuration**: Configure tests to run once and exit (not in watch mode) for CI/CD compatibility
 - **Generated Files**: Ensure comprehensive .gitignore coverage for all generated files and build artifacts
 - **Dependency Versions**: Use specific versions (no `^` or `~` prefixes) to ensure reproducible builds and avoid unexpected updates
-- **Feedback Handling**: Fixing issues after feedback, updating guidelines, or addressing user clarifications is NOT a new task - it's part of the original task completion. Never create separate task files for feedback responses.
+- **Feedback Handling**: Fixing issues after feedback, updating guidelines, or addressing user clarifications is not considered a new task - it's part of the original task completion. All edits must stay on the same branch/PR to avoid scope creep. Never create separate task files for feedback responses.
 
 ### Project Standards:
 - Maintain clean, readable code

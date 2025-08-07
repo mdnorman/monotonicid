@@ -15,6 +15,7 @@ Add a GitHub Actions workflow that runs on pull requests to ensure code quality 
 ## Implementation Details
 - Create `.github/workflows/pr.yml` workflow file
 - Use specific dependency versions (no ^ or ~ prefixes) as per guidelines
+- Pin GitHub Actions versions and Node.js versions for reproducible builds
 - Configure tests to run once and exit (not in watch mode) for CI/CD compatibility
 - Follow modern web development best practices
 
