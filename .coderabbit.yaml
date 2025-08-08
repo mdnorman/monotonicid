@@ -24,13 +24,8 @@ reviews:
   request_changes: ask
   approve: auto
 
-# Language and framework detection
-language:
-  javascript: true
-  typescript: true
-  json: true
-  yaml: true
-  markdown: true
+# Language setting
+language: "en"
 
 # Path-based rules
 path_instructions:
