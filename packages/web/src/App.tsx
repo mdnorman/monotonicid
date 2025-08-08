@@ -1,19 +1,31 @@
 import { useState } from 'react'
 import './App.css'
+import { decodeULID, formatULIDResult, isValidULID } from './ulid-decoder'
 
 function App() {
   const [input, setInput] = useState('')
   const [result, setResult] = useState('')
 
   const decodeMonotonicId = () => {
-    // Basic placeholder for monotonic ID decoding logic
     if (!input.trim()) {
       setResult('Please enter a monotonic ID')
       return
     }
 
-    // This is a placeholder - actual decoding logic will be implemented later
-    setResult(`Decoded result for: ${input}`)
+    const trimmedInput = input.trim()
+
+    // Check if input looks like a ULID (26 characters)
+    if (isValidULID(trimmedInput)) {
+      const decodedResult = decodeULID(trimmedInput)
+      setResult(formatULIDResult(decodedResult))
+    } else {
+      // For non-ULID inputs, provide helpful feedback
+      if (trimmedInput.length === 26) {
+        setResult('❌ Invalid ULID format: Contains invalid characters for Base32 encoding')
+      } else {
+        setResult(`❌ Unrecognized format: ${trimmedInput.length} characters (ULID requires exactly 26 characters)`)
+      }
+    }
   }
 
   return (
