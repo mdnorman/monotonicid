@@ -21,7 +21,7 @@ Each task has its own markdown file with detailed specifications:
 
 - [Initial Setup](./01-initial-setup.md) - ✅ **COMPLETED** (Branch: `task/01-initial-setup`) - Create initial pnpm monorepo project with basic web app
 - [ULID Decoder](./03-ulid-decoder.md) - ✅ **COMPLETED** (Branch: `task/03-ulid-decoder`) - Implement ULID decoding functionality
-- [Renovate and CodeRabbit Config](./04-renovate-coderabbit-config.md) - ✅ **COMPLETED** (Branch: `task/04-renovate-coderabbit-config`) - Configure Renovate PR limits and CodeRabbit integration
+- [Renovate Config](./04-renovate-coderabbit-config.md) - ✅ **COMPLETED** (Branch: `task/04-renovate-coderabbit-config`) - Configure Renovate PR limits and CodeRabbit integration
 
 ## Task Status Legend
 
