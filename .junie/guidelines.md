@@ -30,12 +30,8 @@ The site will be monetized with advertisements and provides users with tools to 
 
 ## Task Management
 
-- All tasks are managed in the `tasks/` directory
-- The `tasks/README.md` file serves as an index pointing to individual task markdown files
-- Each task should have its own `.md` file with detailed specifications
-- Use a single tracking system within the project to monitor task progress
 - **Branching**: Create a separate branch for each individual task to maintain clean development workflow
-  - Branch naming convention: `task/{task-number}-{kebab-case-description}` (e.g., `task/03-update-guidelines`) - use lowercase with hyphens for kebab-case format
+  - Branch naming convention: `issue-{issue-number}/{kebab-case-description}` (e.g., `issue-3/update-guidelines`) - use lowercase with hyphens for kebab-case format
   - Always create and checkout the task branch BEFORE making any changes
   - Never work directly on the main branch for task implementation (assumes `main` is the default branch)
   - Always create a pull request when the task is completed to merge changes back to main branch
